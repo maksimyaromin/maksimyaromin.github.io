@@ -13,8 +13,8 @@ employee:
     first_name: "Maksim"
     last_name: "Yaromin"
     personal_link:
-        display_name: supolka.dev
-        link: https://supolka.dev
+        display_name: maksimyaromin.github.io
+        link: https://maksimyaromin.github.io/
     email:
         display_name: yaromin.m.y@gmail.com
         link: mailto:yaromin.m.y@gmail.com
