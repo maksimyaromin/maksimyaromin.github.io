@@ -4,8 +4,7 @@ title: "Maksim Yaromin"
 favicon: "assets/icons/favicon.ico"
 meta:
     description: >-
-        Добро пожаловать на мой сайт. Вытирайте пожалуйста ноги,
-        и не держите на меня зла.
+        Software Engineer CV. Yaromin Maksim
     robots:
         - index
         - follow
@@ -88,7 +87,7 @@ employee:
               date_from: 2019-01-14
               location: Minsk, Belarus
               achievements:
-                - "Analysis of the application code to identify performance issues and in order to use the best development practices in Angular"
+                - "Analysis of the application code to identify performance issues and to use the best development practices in Angular"
                 - "Developer consultation on Front-End issues"
                 - "Management of a team for the development of the I-9 Platform application - an I-9 electronic circulation service. Code review for team members"
                 - "Internal CSS framework development and application redesign"
@@ -119,11 +118,11 @@ employee:
               date_from: 2015-12-01
               date_to: 2016-07-01
               location: "Minsk, Belarus"
-              description: "Worked with <b>Prof Sergey Lazarouk</b> on the topic of modern methods control when anodizing porous aluminum in a solution of various acids. Developed an application that allowed evaluating the progress of the process in real time using machine learning methods."
+              description: "Worked with <b>Prof Sergey Lazarouk</b> on the topic of modern methods of control when anodizing porous aluminum in a solution of various acids. Developed an application that allowed evaluating the progress of the process in real time using machine learning methods."
             - place: "Open Source Solution"
               title: Developer
               date_from: 2020-10-01
-              description: "I am developing a library for Angular that will allow wrapping React components in native Angular components. This topic is of scientific interest to me. I am researching possible ways to find the best or prove that it does not exist."
+              description: "I am developing a library for Angular that will allow wrapping React components in native Angular components. This topic is of scientific interest to me. I am researching possible ways to find the best one or prove that it does not exist."
         achievements:
             - year: 2020
               description: "Angular Certified Developer. Angular GDEs"
