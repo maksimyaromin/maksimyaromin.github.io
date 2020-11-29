@@ -46,9 +46,9 @@
                   <div class="school section__list_item">
                     {% if school.graduated %}
                       <dt class="school-name section-value">
-                        <header class="school-title section-value__title">
+                        <div class="school-title section-value__title">
                           {{ school.graduated.schoolName | upcase  }}
-                        </header>
+                        </div>
                         <div class="school-graduated-degree">
                           {{ school.graduated.degree }}
                         </div>
@@ -104,9 +104,9 @@
                   <div class="section__list_item">
                     {% if skill.category %}
                       <dt class="section-value">
-                        <header class="section-value__title">
+                        <div class="section-value__title">
                           {{ skill.category | upcase  }}
-                        </header>
+                        </div>
                       </dt>
                     {% endif %}
                     {% if skill.category_sets %}
@@ -141,9 +141,9 @@
                 {% for company in page.employee.sections.experience %}
                   <div class="company section__list_item">
                     <dt class="company__description section-value">
-                      <header class="company__description_title section-value__title">
+                      <div class="company__description_title section-value__title">
                         {{ company.company | upcase }}
-                      </header>
+                      </div>
                       {% if company.position %}
                         <div class="company__description_position">
                           {{ company.position | join: ", "}}
@@ -189,13 +189,13 @@
                 {% for research in page.employee.sections.research %}
                   <div class="section__list_item">
                     <dt class="section-value">
-                      <header class="section-value__title">
+                      <div class="section-value__title">
                         <span>{{ research.place | upcase }}</span>
                         {% if research.title %}
                           <span class="list-item-delimiter">&#124;</span>
                           <span class="section-value__title_sub">{{ research.title }}</span>
                         {% endif %}
-                      </header>
+                      </div>
                       {% if research.date_from or research.location %}
                         <div class="section-value__time-and-location">
                           {% if research.date_from %}
