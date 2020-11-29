@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+    <meta charset="utf-8">
+    <meta name="description" content="{{ page.meta.description }}">
+    <meta name="robots" content="{{ page.meta.robots | join: ", " }}">
+    <title>{{ site.title }} - {{ page.title }} ({{ site.lang }})</title>
+    <link rel="shortcut icon" href="{{ page.favicon | relative_url }}" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header role="banner" aria-labelledby="fullName" class="employee-header">
+        <div id="fullName" class="employee-header__name">
+          {{ page.employee.first_name }} <strong class="employee-header__name--highlight">{{ page.employee.last_name }}</strong>
+        </div>
+        <div class="employee-header__personal-link">
+          <a class="link" href="{{ page.employee.personal_link.link }}">{{ page.employee.personal_link.display_name }}</a>
+        </div>
+        <div class="employee-header__links">
+          <ul class="employee-header__links_list">
+            <li class="employee-header__links_list_item">
+              <a class="link" href="{{ page.employee.email.link }}">{{ page.employee.email.display_name }}</a>
+            </li>
+            <li class="list-item-delimiter">&#124;</li>
+            <li class="employee-header__links_list_item">
+              <a class="link" href="{{ page.employee.phone.link }}">{{ page.employee.phone.display_name }}</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <hr />
+      <main role="main" class="employee-sections">
+        <div class="employee-about">
+          {% if page.employee.sections.education %}
+            <section class="section" aria-labelledby="education">
+              <h2 class="section__title" id="education">Education</h2>
+              <dl class="section__list">
+                {% for school in page.employee.sections.education.schools %}
+                  <div class="school section__list_item">
+                    {% if school.graduated %}
+                      <dt class="school-name section-value">
+                        <h3 class="school-title section-value__title">
+                          {{ school.graduated.schoolName | upcase  }}
+                        </h3>
+                        <div class="school-graduated-degree">
+                          {{ school.graduated.degree }}
+                        </div>
+                        {% if school.graduated.date or school.graduated.location %}
+                          <div class="school-graduated-at section-value__time-and-location">
+                            {% if school.graduated.date %}
+                              <time class="time" datetime="{{ school.graduated.date }}">{{ school.graduated.date | date: "%b %Y" }}</time>
+                            {% endif %}
+                            {% if school.graduated.date and school.graduated.location %}
+                              <span class="list-item-delimiter">&#124;</span>
+                            {% endif %}
+                            {% if school.graduated.location %}
+                              <span class="location">{{ school.graduated.location }}</span>
+                            {% endif %}
+                          </div>
+                        {% endif %}
+                      </dt>
+                    {% endif %}
+                    {% if school.subjects %}
+                      <dd class="school-subjects section-additional-data">
+                        <ul class="school-subjects__list section-additional-data__list">
+                          {% for subject in school.subjects %}
+                            <li class="school-subjects__list_item section-additional-data__list_item">{{ subject }}</li>
+                          {% endfor %}
+                        </ul>
+                      </dd>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </dl>
+            </section>
+          {% endif %}
+          {% if page.employee.sections.links %}
+            <section class="section" aria-labelledby="links">
+              <h2 class="section__title" id="links">Links</h2>
+              <div class="links section-additional-data">
+                <ul class="links__list section-additional-data__list">
+                  {% for link in page.employee.sections.links %}
+                    <li class="links__list_item section-additional-data__list_item">
+                      {{ link.resource }}
+                      <a class="link" target="_blank" href="{{ link.link }}">{{ link.display_name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </section>
+          {% endif %}
+          {% if page.employee.sections.skills %}
+            <section class="section" aria-labelledby="skills">
+              <h2 class="section__title" id="skills">Skills</h2>
+              <dl class="section__list">
+                {% for skill in page.employee.sections.skills %}
+                  <div class="section__list_item">
+                    {% if skill.category %}
+                      <dt class="section-value">
+                        <h3 class="section-value__title">
+                          {{ skill.category | upcase  }}
+                        </h3>
+                      </dt>
+                    {% endif %}
+                    {% if skill.category_sets %}
+                      <dd class="section-additional-data">
+                        <ul class="section-additional-data__list">
+                          {% for category_set in skill.category_sets %}
+                            <li class="skills-category-set section-additional-data__list_item">
+                              <h4 class="skills-category-set__title">{{ category_set.title }}</h4>
+                              <ul class="skills-category-set__list">
+                                {% for item in category_set.items %}
+                                  <li class="skills-category-set__list_item">
+                                    {{ item }}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </dd>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </dl>
+            </section>
+          {% endif %}
+        </div>
+        <div class="employee-expirience">
+          {% if page.employee.sections.experience %}
+            <section class="section" aria-labelledby="experience">
+              <h2 class="section__title" id="experience">Experience</h2>
+              <dl class="section__list">
+                {% for company in page.employee.sections.experience %}
+                  <div class="company section__list_item">
+                    <dt class="company__description section-value">
+                      <h3 class="company__description_title section-value__title">
+                        {{ company.company | upcase }}
+                      </h3>
+                      {% if company.position %}
+                        <div class="company__description_position">
+                          {{ company.position | join: ", "}}
+                        </div>
+                      {% endif %}
+                      {% if company.date_from or company.location %}
+                        <div class="company__description_period section-value__time-and-location">
+                          {% if company.date_from %}
+                            <time class="time" datetime="{{ company.date_from }}">{{ company.date_from | date: "%b %Y" }}</time>
+                            {% if company.date_to %}
+                              &#8211;&nbsp;<time class="time" datetime="{{ company.date_to }}">{{ company.date_to | date: "%b %Y" }}</time>
+                            {% else %}
+                              &#8211;&nbsp;<span>Present</span>
+                            {% endif %}
+                          {% endif %}
+                          {% if company.date_from and company.location %}
+                            <span class="list-item-delimiter">&#124;</span>
+                          {% endif %}
+                          {% if company.location %}
+                            <span class="location">{{ company.location }}</span>
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                    </dt>
+                    {% if company.achievements %}
+                      <dd class="company__achievements section-additional-data">
+                        <ul class="company__achievements_list section-additional-data__list">
+                          {% for achievement in company.achievements %}
+                            <li class="company__achievements_list_item section-additional-data__list_item">{{ achievement }}</li>
+                          {% endfor %}
+                        </ul>
+                      </dd>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </dl>
+            </section>
+          {% endif %}
+          {% if page.employee.sections.research %}
+            <section class="section" aria-labelledby="research">
+              <h2 class="section__title" id="research">Research</h2>
+              <dl class="section__list">
+                {% for research in page.employee.sections.research %}
+                  <div class="section__list_item">
+                    <dt class="section-value">
+                      <h3 class="section-value__title">
+                        <span>{{ research.place | upcase }}</span>
+                        {% if research.title %}
+                          <span class="list-item-delimiter">&#124;</span>
+                          <span class="section-value__title_sub">{{ research.title }}</span>
+                        {% endif %}
+                      </h3>
+                      {% if research.date_from or research.location %}
+                        <div class="section-value__time-and-location">
+                          {% if research.date_from %}
+                            <time class="time" datetime="{{ research.date_from }}">{{ research.date_from | date: "%b %Y" }}</time>
+                            {% if research.date_to %}
+                              &#8211;&nbsp;<time class="time" datetime="{{ research.date_to }}">{{ research.date_to | date: "%b %Y" }}</time>
+                            {% else %}
+                              &#8211;&nbsp;<span>Present</span>
+                            {% endif %}
+                          {% endif %}
+                          {% if research.date_from and research.location %}
+                            <span class="list-item-delimiter">&#124;</span>
+                          {% endif %}
+                          {% if research.location %}
+                            <span class="location">{{ research.location }}</span>
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                    </dt>
+                    {% if research.description %}
+                      <dd class="section-additional-data">
+                        <div class="section-additional-data__text">
+                          {{ research.description }}
+                        </div>
+                      </dd>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </dl>
+            </section>
+          {% endif %}
+          {% if page.employee.sections.achievements %}
+            <section class="section" aria-labelledby="achievements">
+              <h2 class="section__title" id="achievements">Achievements</h2>
+              <dl class="achievements__list">
+                {% for achievement in page.employee.sections.achievements %}
+                  <dt class="achievements__list_year">{{ achievement.year }}</dt>
+                  <dd class="achievements__list_description">{{ achievement.description }}</dd>
+                {% endfor %}
+              </dl>
+            </section>
+          {% endif %}
+          {% if page.employee.sections.articles %}
+            <section class="section" aria-labelledby="articles">
+              <h2 class="section__title" id="articles">Articles</h2>
+              <ol class="articles__list">
+                {% for article in page.employee.sections.articles %}
+                  <li class="articles__list_item">{{article}}</li>
+                {% endfor %}
+              </ol>
+            </section>
+          {% endif %}
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

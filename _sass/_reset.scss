@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+%reset-box {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  border: 0;
+  @extend %reset-box;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+  @extend %reset-box;
+}
+
+h1, h2, h3, h4 {
+  @extend %reset-box;
+}
+
+dl, dt, dd {
+  @extend %reset-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}

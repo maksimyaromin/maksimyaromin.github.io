@@ -1,0 +1,99 @@
+dl, dt, dd, h1, h2, h3, h4, ul, ol, html, body { margin: 0; padding: 0; }
+
+html, body { border: 0; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ul, ol { list-style: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+.company__description_position, .skills-category-set__title, .school-graduated-degree, .section-value__time-and-location, .section-value__title, .section__title, .link, .employee-header__name { font-family: "Raleway", sans-serif; }
+
+body { font-family: "Lato", sans-serif; }
+
+.link, .employee-header__links_list .list-item-delimiter { font-size: 1rem; line-height: 1.4; }
+
+.articles__list, .achievements__list, .section-additional-data__text, .section-additional-data__list_item { font-size: 1rem; font-weight: 300; line-height: 1.2; }
+
+html, body { min-height: 100vh; }
+
+html { font-size: 16px; -ms-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-size-adjust: 100%; }
+
+body { background-color: #FFFFFF; color: #333333; overflow-y: scroll; overscroll-behavior-y: none; }
+
+.content-wrapper { margin: 0 auto; min-height: 100vh; position: relative; }
+
+hr { background-color: #6A6A6A; border: 0; height: 1px; }
+
+.employee-header { align-items: center; display: flex; flex-direction: column; padding: 20px 0; }
+
+.employee-header__name { font-size: 3.75rem; font-weight: 100; line-height: 1; }
+
+.employee-header__name--highlight { font-weight: 300; }
+
+.employee-header__personal-link { margin-top: 10px; }
+
+.employee-header__links_list { display: flex; flex-wrap: wrap; justify-content: space-around; }
+
+.employee-header__links_list .list-item-delimiter { color: #6A6A6A; }
+
+.link { color: #6A6A6A; font-weight: 500; text-decoration: none; }
+
+.list-item-delimiter { align-items: center; display: inline-flex; line-height: 1; margin: 0 10px; }
+
+.employee-sections { display: grid; margin: 20px 0; }
+
+.section { position: relative; }
+
+.section + .section { margin-top: 20px; }
+
+.section__title { color: #6A6A6A; font-size: 1.7rem; font-weight: 200; line-height: 1; text-transform: uppercase; }
+
+.section__list_item + .section__list_item { margin-top: 10px; }
+
+.section-value__title { font-size: 1.1rem; line-height: 1.2; margin: 5px 0; }
+
+.section-value__title .list-item-delimiter, .section-value__title_sub { font-weight: 400; }
+
+.section-value__time-and-location { color: #6A6A6A; font-size: .9rem; font-weight: 600; line-height: 1; }
+
+.section-additional-data { margin-top: 5px; }
+
+.school-graduated-degree { font-size: 1rem; line-height: 1; margin-bottom: 5px; }
+
+.links__list_item .link { color: #333333; font-size: 1rem; line-height: 1.2; }
+
+.skills-category-set + .skills-category-set { margin-top: 5px; }
+
+.skills-category-set__title { color: #6A6A6A; }
+
+.skills-category-set__list_item { display: inline-block; }
+
+.skills-category-set__list_item:not(:last-of-type)::after { content: "\2022"; }
+
+.achievements__list { display: grid; grid-template-columns: 80px auto; margin-top: 5px; row-gap: 5px; }
+
+.achievements__list_year { text-align: center; }
+
+.articles__list { counter-reset: articles; display: grid; grid-template-columns: auto; margin-top: 5px; row-gap: 5px; }
+
+.articles__list_item { counter-increment: articles; padding-left: 30px; position: relative; }
+
+.articles__list_item::before { color: #6A6A6A; content: "[" counter(articles) "]"; left: 0; position: absolute; }
+
+.company__description_position { font-size: 1rem; line-height: 1.1; margin-bottom: 5px; }
+
+.company__achievements_list_item { padding-left: 30px; position: relative; }
+
+.company__achievements_list_item + .company__achievements_list_item { margin-top: 5px; }
+
+.company__achievements_list_item:before { content: "\2022"; left: 0; position: absolute; text-align: center; width: 30px; }
+
+@media screen and (min-width: 980px) { html { font-size: 16px; } .content-wrapper { max-width: 980px; } .employee-sections { column-gap: 60px; grid-template-columns: 300px auto; padding: 0 60px; } }
+
+@media screen and (max-width: 979px) { html { font-size: 20.8px; } .employee-sections { grid-template-columns: auto; padding: 0 20px; row-gap: 20px; } }
+
+@media print { html { font-size: 16px; } .content-wrapper { max-width: 100%; width: 100%; } .employee-sections { column-gap: 20px; grid-template-columns: 300px auto; padding: 0 20px; } }
+
+/*# sourceMappingURL=main.css.map */
