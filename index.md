@@ -8,6 +8,10 @@ meta:
     robots:
         - index
         - follow
+    twitter:
+      user_name: "@MaxEryomin"
+      title: Nice to meet you!
+      image: assets/images/me.png
 employee:
     first_name: "Maksim"
     last_name: "Yaromin"

@@ -14,6 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" }}">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="{{ page.meta.twitter.user_name }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:title" content="{{ page.meta.twitter.title }}" />
+    <meta property="og:description" content="{{ page.meta.description }}" />
+    <meta property="og:image" content="{{ site.url }}/{{ page.meta.twitter.image }}" />
   </head>
   <body>
     <div class="content-wrapper">
