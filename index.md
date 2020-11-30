@@ -4,7 +4,7 @@ title: "Maksim Yaromin"
 favicon: "assets/icons/favicon.ico"
 meta:
     description: >-
-        Software Engineer CV. Yaromin Maksim
+        Hello, my name is Maksim Yaromin. I am Software Developer. Software Development is being my passion since early childhood. And I am glad I was able to realize my dream. Today I am a professional developer with decades of experience.
     robots:
         - index
         - follow

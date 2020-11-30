@@ -26,6 +26,29 @@
     }
 }
 
+@media screen and (max-width: 599px) {
+    .employee-header {
+        &__name {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .employee-header {
+        &__links {
+            &_list {
+                align-items: center;
+                flex-direction: column;
+
+                .list-item-delimiter {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 @media print {
     html {
         font-size: $base-fs;
