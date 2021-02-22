@@ -89,7 +89,6 @@ employee:
               position:
                 - Team Leader
               date_from: 2020-11-01
-              date_to: 2020-10-02
               location: Tallinn, Estonia
               achievements:
                 - "Migrating a monolithic application to the cloud with a split into microservices"
