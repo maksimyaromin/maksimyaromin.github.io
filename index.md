@@ -22,8 +22,8 @@ employee:
         display_name: yaromin.m.y@gmail.com
         link: mailto:yaromin.m.y@gmail.com
     phone:
-        display_name: +375.(33).628.20.37
-        link: tel:+375336282037
+        display_name: +48.51.86.48.453
+        link: tel:+48518648453
     sections:
         education:
             schools:
@@ -85,10 +85,19 @@ employee:
                     - ASP.NET Core
                     - SignalR
         experience:
+            - company: Linnworks
+              position:
+                - Team Leader
+              date_from: 2020-11-01
+              date_to: 2020-10-02
+              location: Tallinn, Estonia
+              achievements:
+                - "Migrating a monolithic application to the cloud with a split into microservices"
             - company: EPAM Systems
               position:
                 - Developer's Team Leader
               date_from: 2019-01-14
+              date_to: 2020-10-02
               location: Minsk, Belarus
               achievements:
                 - "Analysis of the application code to identify performance issues and to use the best development practices in Angular"
