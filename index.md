@@ -22,8 +22,8 @@ employee:
         display_name: yaromin.m.y@gmail.com
         link: mailto:yaromin.m.y@gmail.com
     phone:
-        display_name: +48.51.86.48.453
-        link: tel:+48518648453
+        display_name: +48.50.51.76.974
+        link: tel:+48505176974
     sections:
         education:
             schools:
