@@ -69,21 +69,28 @@ employee:
                 - title: "Over 1000 lines:"
                   items:
                     - C++
-                    - Python
+                    - Python (ML)
                     - Shell
                     - Scala
+                - title: "Veteran:"
+                  items:
+                    - Angular
+                    - React
+                    - ASP.NET Core
+                    - Docker
+                    - SCSS
                 - title: "Familiar:"
                   items:
                     - Azure
-                    - Docker
+                    - AWS
+                    - Terraform
+                    - Vagrant
                     - Kubernetes
                     - MS SQL
                     - MongoDB
-                    - Angular
-                    - React
                     - Xamarin
-                    - ASP.NET Core
                     - SignalR
+                    - AngularJS
         experience:
             - company: Linnworks
               position:
