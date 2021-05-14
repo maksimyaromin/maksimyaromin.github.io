@@ -1,164 +1,179 @@
 ---
 layout: resume
-title: "Maksim Yaromin"
+title: "Надежда Ерёмина"
 favicon: "assets/icons/favicon.ico"
 meta:
     description: >-
-        Hello, my name is Maksim Yaromin. I am Software Developer. Software Development is being my passion since early childhood. And I am glad I was able to realize my dream. Today I am a professional developer with decades of experience.
+        Всем привет! Меня зовут Надя Ерёмина.
+        Я переводчик с английского и шведского.
     robots:
         - index
         - follow
-    twitter:
-      user_name: "@MaxEryomin"
-      title: Nice to meet you!
-      image: assets/images/me.png
 employee:
-    first_name: "Maksim"
-    last_name: "Yaromin"
+    first_name: "Надежда"
+    last_name: "Ерёмина"
     personal_link:
-        display_name: maksimyaromin.github.io
-        link: https://maksimyaromin.github.io/
+        display_name: nadyayaromina.github.io
+        link: https://nadyayaromina.github.io/
     email:
-        display_name: yaromin.m.y@gmail.com
-        link: mailto:yaromin.m.y@gmail.com
+        display_name: yaromina.n.y@gmail.com
+        link: mailto:yaromina.n.y@gmail.com
     phone:
-        display_name: +48.50.51.76.974
-        link: tel:+48505176974
+        display_name: +375.29.736.83.91
+        link: tel:+375297368391
     sections:
         education:
             schools:
                 - graduated:
-                    schoolName: "Belarusian State University of Informatics and Radioelectronics"
-                    degree: "MEng in Nanoelectronics"
-                    date: 2016-07-31
-                    location: "Minsk, Belarus"
+                    schoolName: "Минский государственный лингвистический университет"
+                    degree: "Выпускница (специалист)"
+                    date: 2019-07-31
+                    location: "Минск, Беларусь"
                   subjects:
-                    - Nanotechnologies and Nanomaterials in Electronics
-                    - Machine Learning
-                    - Advanced Math
-                    - Evolutionary Computation
-                    - Functional Programming
+                    - Современные иностранные языки (перевод)
+                    - Лингвист-переводчик со знанием двух иностранных языков (английский/шведский)
+                    - Специальный (научно-технический перевод)
+                    - Синхронный перевод
+                    - Последовательный перевод
+                    - Письменный перевод (научно-технических текстов и бизнес-документации)
+                    - Английский язык
+                    - Шведский язык
+                    - Лингвистика
+                    - Страноведение и регионоведение
         links:
             - resource: "Facebook://"
-              display_name: dariusdotnet
-              link: https://www.facebook.com/dariusdotnet
-            - resource: "Github://"
-              display_name: maksimyaromin
-              link: https://github.com/maksimyaromin
+              display_name: nadya.yeriomina
+              link: https://www.facebook.com/nadya.yeriomina
             - resource: "LinkedIn://"
-              display_name: yarominmy
-              link: https://www.linkedin.com/in/yarominmy/
+              display_name: yarominany
+              link: https://www.linkedin.com/in/yarominany/
             - resource: "Twitter://"
-              display_name: "@MaxEryomin"
-              link: https://twitter.com/MaxEryomin
+              display_name: "@NadyaYeriomina"
+              link: https://twitter.com/NadyaYeriomina
         skills:
-            - category: Programming
+            - category: Языковые навыки
               category_sets:
-                - title: "Over 100000 lines:"
+                - title: "Proficiency, родной язык"
                   items:
-                    - JavaScript
-                - title: "Over 50000 lines:"
+                    - Русский язык
+                    - Белорусский язык
+                - title: "Advanced, C1"
                   items:
-                    - C#
-                    - TypeScript
-                    - CSS
-                - title: "Over 10000 lines:"
+                    - Английский язык
+                    - Шведский язык
+                - title: "Intermediate, B2"
                   items:
-                    - F#
-                    - HTML
-                - title: "Over 1000 lines:"
+                    - Французский язык
+            - category: Уверенный пользователь ПК
+              category_sets:
+                - title: "Ознакомлена с"
                   items:
-                    - C++
-                    - Python (ML)
-                    - Shell
-                    - Scala
-                - title: "Veteran:"
-                  items:
-                    - Angular
-                    - React
-                    - ASP.NET Core
-                    - Docker
-                    - SCSS
-                - title: "Familiar:"
-                  items:
-                    - Azure
-                    - AWS
-                    - Terraform
-                    - Vagrant
-                    - Kubernetes
-                    - MS SQL
-                    - MongoDB
-                    - Xamarin
-                    - SignalR
-                    - AngularJS
+                    - Microsoft Office products
+                    - SmartCAT
+                    - Linguee
+                    - Internet
         experience:
-            - company: Linnworks
+            - company: "Центр международных шведских исследований"
               position:
-                - Team Leader
+                - Преподаватель шведского языка
               date_from: 2020-11-01
-              location: Tallinn, Estonia
-              achievements:
-                - "Migrating a monolithic application to the cloud with a split into microservices"
-            - company: EPAM Systems
+              location: Минск, Беларусь
+            - company: ЧП "Минское областное бюро переводов"
               position:
-                - Developer's Team Leader
+                - Штатный устный / письменный переводчик (английский/шведский)
               date_from: 2019-01-14
               date_to: 2020-10-02
-              location: Minsk, Belarus
+              location: Минск, Беларусь
               achievements:
-                - "Analysis of the application code to identify performance issues and to use the best development practices in Angular"
-                - "Developer consultation on Front-End issues"
-                - "Management of a team for the development of the I-9 Platform application - an I-9 electronic circulation service. Code review for team members"
-                - "Internal CSS framework development and application redesign"
-            - company: SYSTEM TECHNOLOGIES JLLC
+                - "Нотариальный переводчик \"Минская городская нотариальная контора\" английского, шведского, французского, белорусского и русского языков"
+            - company: Стажировка в "Международном центре шведских исследований"
               position:
-                - Software Engineering Intern
-                - Junior Software Engineer
-                - Middle Software Engineer
-                - Senior Software Engineer
-              date_from: 2014-07-01
+                - Стажер
+              date_from: 2018-07-01
               date_to: 2018-12-31
-              location: Minsk, Belarus
+              location: Минск, Беларусь
               achievements:
-                - "Work on several products of the company to automate banking operations. Full stack development and support"
-                - "Development of an internal MVVM framework based on KendoUI and AMD for creating front-end applications"
-            - company: Upwork.com
+                - "Перевод статей для публикации"
+            - company: Стажировка при УВКБ ООН
               position:
-                - Freelancer
-              date_from: 2011-09-01
-              date_to: 2014-07-01
-              location: Minsk, Belarus
+                - Стажер
+              date_from: 2017-09-01
+              date_to: 2019-07-01
+              location: Минск, Беларусь
               achievements:
-                - "Development of soft skills, such as: self-organization, self-education, sociability"
-                - "Mastering the ability to work independently" 
-        research:
-            - place: "BSUIR Nanoelectronics LAB"
-              title: Researcher
-              date_from: 2015-12-01
+                - "Письменный перевод частей ежегодного отчета комиссии по Сирии и Афганистану"
+            - company: Волонтёрская работа
+              position:
+                - Устный/письменный переводчик
+              date_from: 2015-09-01
+              date_to: 2018-07-01
+              location: Минск, Беларусь
+              achievements:
+                - "Участие в качестве последовательного переводчика от «Лиги переводчиков МГЛУ» в различного рода международных конференциях/соревнованиях/событиях:"
+                - "Спортивные соревнования (\"Кубки по теннису\", \"Легкоатлетические соревнования\")"
+                - "Фестиваль медиации в Минске 2018"
+                - "ПА ОБСЕ 5–9 июля 2017 г."
+                - "Международные фестивали и концерты"
+                - "\"Конференция группы поддержки шёлкового пути ПА ОБСЕ\" 2019 г."
+            - company: Стажировка в агентстве переводов "Перекладна"
+              position:
+                - Переводчик
+              date_from: 2015-09-01
               date_to: 2016-07-01
-              location: "Minsk, Belarus"
-              description: "Worked with <b>Prof Sergey Lazarouk</b> on the topic of modern methods of control when anodizing porous aluminum in a solution of various acids. Developed an application that allowed evaluating the progress of the process in real time using machine learning methods."
-            - place: "Open Source Solution"
-              title: Developer
-              date_from: 2020-10-01
-              description: "I am developing a library for Angular that will allow wrapping React components in native Angular components. This topic is of scientific interest to me. I am researching possible ways to find the best one or prove that it does not exist."
+              location: Минск, Беларусь
+            - company: Международной студенческой организации "AIESEC"
+              position:
+                - Преподаватель английского/менеджер
+              date_from: 2015-09-01
+              date_to: 2016-07-01
+              location: Минск, Беларусь
+              achievements:
+                - "Участие в программах обмена \"AIESEC\" (международная молодёжная организация, действующая в 126 странах мира)"
+                - "Преподавание английского языка детям в Грузии и Польше."
+                - "Осуществление отбора/приёма иностранных студентов для прохождения стажировок в Беларуси (2016 г)"
+            - company: Организация «SOS детские деревни, Беларусь» 
+              position:
+                - Переводчик-волонтёр
+              date_from: 2015-09-01
+              date_to: 2015-07-01
+              location: Минск, Беларусь
+              achievements:
+                - "Перевод материалов для размещения в СМИ, перевод информации для зарубежных партнёров"
+        research:
+            - place: "МГЛУ"
+              date_from: 2015-12-01
+              date_to: 2019-07-01
+              location: "Минск, Беларусь"
+              description: "Участие в ежегодных днях науки МГЛУ. Публикации в сборниках научных выступлений студентов-магистрантов и преподавателей по политологии, философии, психологии и переводу с 2015–2019 гг."
         achievements:
+            - year: 2021
+              description: "\"Синхронный перевод (вторая ступень)\" онлайн-курс от СПбГУ"
+            - year: 2021
+              description: "\"Межкультурная коммуникация и перевод\", онлайн-курс \"Национальная платформа открытого образования\","
             - year: 2020
-              description: "Angular Certified Developer. Angular GDEs"
-            - year: 2020
-              description: "Exam AZ-900: Microsoft Azure Fundamentals. Microsoft"
+              description: "Британский Совет, тестирование на уровень английского языка (IELTS сертификат, уровень С1)"
             - year: 2019
-              description: "Microsoft Certified Solution Developer: App Builder. Microsoft"
+              description: "Третий иностранный язык (французский) на кафедре третьего иностранного в МГЛУ"
+            - year: 2019
+              description: "Онлайн курс для преподавателей шведского языка за рубежом от Шведского института"
+            - year: 2019
+              description: "УВКБ ООН (сертификат-рекомендация)"
+            - year: 2019
+              description: "Посольство Пакистана в РБ (благодарность)"
             - year: 2018
-              description: "Microsoft Certified Solution Associate: Web Applications. Microsoft"
+              description: "Образовательная поездка в Стокгольм с целью повышения языковой компетенции от Шведского института"
             - year: 2018
-              description: "Exam 486: Developing ASP.NET MVC Web Application. Microsoft"
+              description: "Gothenburg University, Минск (сертификат об участии в исследовании)"
             - year: 2018
-              description: "Exam 483: Programming in C#. Microsoft"
+              description: "2-е место в конкурсе на \"Лучший перевод прозы\", ПФ МГЛУ"
             - year: 2018
-              description: "Exam 480: Programming in HTML5 with JavaScript and CSS3. Microsoft"
+              description: "Минский фестиваль медиации (благодарность)"
             - year: 2017
-              description: "Techdegree: Full-Stack JavaScript Developer. Treehouse Inc."
-        articles:
-            - "Evolution stages of modern web frameworks. The concepts behind them and the details that will improve their efficiency. Considered the following: Angular.JS, Angular 2, Angular 4, Angular 11, React. <em>Series of articles</em>. In draft."
+              description: "Летние языковые курсы в Швеции (Hola folkhögskola)"
+            - year: 2017
+              description: "Центр шведский исследований (благодарность/рекомендация)"
+            - year: 2017
+              description: "ПА ОБСЕ (благодарность)"
+            - year: 2015
+              description: "\"SOS детские деревни, Беларусь\" (благодарность) "
 ---

@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="{{ page.favicon }}" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" }}">
@@ -48,7 +49,7 @@
         <div class="employee-about">
           {% if page.employee.sections.education %}
             <section class="section" aria-labelledby="education">
-              <h2 class="section__title" id="education">Education</h2>
+              <h2 class="section__title" id="education">Образование</h2>
               <dl class="section__list">
                 {% for school in page.employee.sections.education.schools %}
                   <div class="school section__list_item">
@@ -63,7 +64,7 @@
                         {% if school.graduated.date or school.graduated.location %}
                           <div class="school-graduated-at section-value__time-and-location">
                             {% if school.graduated.date %}
-                              <time class="time" datetime="{{ school.graduated.date }}">{{ school.graduated.date | date: "%b %Y" }}</time>
+                              <time class="time" datetime="{{ school.graduated.date }}">{{ school.graduated.date | date: "%m.%Y" }}</time>
                             {% endif %}
                             {% if school.graduated.date and school.graduated.location %}
                               <span class="list-item-delimiter">&#124;</span>
@@ -91,7 +92,7 @@
           {% endif %}
           {% if page.employee.sections.links %}
             <section class="section" aria-labelledby="links">
-              <h2 class="section__title" id="links">Links</h2>
+              <h2 class="section__title" id="links">Ссылки</h2>
               <div class="links section-additional-data">
                 <ul class="links__list section-additional-data__list">
                   {% for link in page.employee.sections.links %}
@@ -106,7 +107,7 @@
           {% endif %}
           {% if page.employee.sections.skills %}
             <section class="section" aria-labelledby="skills">
-              <h2 class="section__title" id="skills">Skills</h2>
+              <h2 class="section__title" id="skills">Навыки</h2>
               <dl class="section__list">
                 {% for skill in page.employee.sections.skills %}
                   <div class="section__list_item">
@@ -144,7 +145,7 @@
         <div class="employee-expirience">
           {% if page.employee.sections.experience %}
             <section class="section" aria-labelledby="experience">
-              <h2 class="section__title" id="experience">Experience</h2>
+              <h2 class="section__title" id="experience">Опыт работы. Стажировки</h2>
               <dl class="section__list">
                 {% for company in page.employee.sections.experience %}
                   <div class="company section__list_item">
@@ -160,11 +161,11 @@
                       {% if company.date_from or company.location %}
                         <div class="company__description_period section-value__time-and-location">
                           {% if company.date_from %}
-                            <time class="time" datetime="{{ company.date_from }}">{{ company.date_from | date: "%b %Y" }}</time>
+                            <time class="time" datetime="{{ company.date_from }}">{{ company.date_from | date: "%Y" }}</time>
                             {% if company.date_to %}
-                              &#8211;&nbsp;<time class="time" datetime="{{ company.date_to }}">{{ company.date_to | date: "%b %Y" }}</time>
+                              &#8211;&nbsp;<time class="time" datetime="{{ company.date_to }}">{{ company.date_to | date: "%Y" }}</time>
                             {% else %}
-                              &#8211;&nbsp;<span>Present</span>
+                              &#8211;&nbsp;<span>Настоящее время</span>
                             {% endif %}
                           {% endif %}
                           {% if company.date_from and company.location %}
@@ -192,7 +193,7 @@
           {% endif %}
           {% if page.employee.sections.research %}
             <section class="section" aria-labelledby="research">
-              <h2 class="section__title" id="research">Research</h2>
+              <h2 class="section__title" id="research">Научная деятельность</h2>
               <dl class="section__list">
                 {% for research in page.employee.sections.research %}
                   <div class="section__list_item">
@@ -207,9 +208,9 @@
                       {% if research.date_from or research.location %}
                         <div class="section-value__time-and-location">
                           {% if research.date_from %}
-                            <time class="time" datetime="{{ research.date_from }}">{{ research.date_from | date: "%b %Y" }}</time>
+                            <time class="time" datetime="{{ research.date_from }}">{{ research.date_from | date: "%Y" }}</time>
                             {% if research.date_to %}
-                              &#8211;&nbsp;<time class="time" datetime="{{ research.date_to }}">{{ research.date_to | date: "%b %Y" }}</time>
+                              &#8211;&nbsp;<time class="time" datetime="{{ research.date_to }}">{{ research.date_to | date: "%Y" }}</time>
                             {% else %}
                               &#8211;&nbsp;<span>Present</span>
                             {% endif %}
@@ -237,7 +238,7 @@
           {% endif %}
           {% if page.employee.sections.achievements %}
             <section class="section" aria-labelledby="achievements">
-              <h2 class="section__title" id="achievements">Achievements</h2>
+              <h2 class="section__title" id="achievements">Курсы, повышение квалификации, достижения</h2>
               <dl class="achievements__list">
                 {% for achievement in page.employee.sections.achievements %}
                   <dt class="achievements__list_year">{{ achievement.year }}</dt>
