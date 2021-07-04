@@ -1,0 +1,84 @@
+---
+---
+:root {
+    --color-base-100: 106, 106, 106;
+    --color-base-200: 51, 51, 51;
+    --color-black: 0, 0, 0;
+    --color-white: 255, 255, 255;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply leading-none min-h-screen text-root lg-reversed:text-root-1.3 print:text-root;
+        -webkit-tap-highlight-color: rgba(var(--color-black), 0);
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        @apply bg-white min-h-screen overflow-y-scroll overscroll-y-none text-base-200;
+    }
+
+    hr {
+        @apply bg-base-100 border-0 h-px;
+    }
+}
+
+@layer components {
+    .achievement::before {
+        @apply absolute left-0 text-center w-8;
+        content: "\2022";
+    }
+
+    .achievement + .achievement,
+    .skills-category-set + .skills-category-set {
+        @apply mt-2.5;
+    }
+
+    .articles {
+        counter-reset: articles;
+    }
+
+    .article {
+        counter-increment: articles;
+    }
+
+    .article::before {
+        @apply absolute left-0 text-base-100;
+        content: "\5b" counter(articles) "\5d";
+    }
+
+    .employee-sections {
+        @apply lg-reversed:gap-y-5 lg-reversed:grid-cols-auto lg-reversed:px-5;
+        @apply lg:gap-x-15 lg:grid-cols-layout lg:px-15;
+        @apply print:gap-x-5 print:grid-cols-layout print:px-5;
+    }
+
+    .link {
+        @apply font-accent font-medium text-base text-base-100;
+    }
+
+    .list-item-delimiter {
+        @apply inline-flex items-center leading-none mx-2.5;
+    }
+
+    .section {
+        @apply relative;
+    }
+
+    .section + .section,
+    .section-item + .section-item {
+        @apply mt-5;
+    }
+
+    .skill:not(:last-of-type)::after {
+        content: "\2022";
+    }
+
+    .section-title {
+        @apply font-accent font-extralight leading-none text-3xl text-base-100 uppercase;
+    }
+}

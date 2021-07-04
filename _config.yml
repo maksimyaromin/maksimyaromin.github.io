@@ -2,3 +2,6 @@ url: "https://maksimyaromin.github.io/" # the base hostname & protocol for your 
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "CV" # the name of your site, e.g. ACME Corp.
 lang: "en"
+
+plugins:
+  - jekyll-postcss

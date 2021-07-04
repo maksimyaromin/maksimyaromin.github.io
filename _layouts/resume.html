@@ -23,45 +23,43 @@
     <meta property="og:image" content="{{ site.url }}{{ page.meta.twitter.image }}" />
   </head>
   <body>
-    <div class="content-wrapper">
-      <header aria-labelledby="fullName" class="employee-header">
-        <div id="fullName" class="employee-header__name">
-          {{ page.employee.first_name }} <strong class="employee-header__name--highlight">{{ page.employee.last_name }}</strong>
+    <div class="lg:max-w-layout min-h-screen mx-auto my-0 print:max-w-full print:w-full relative">
+      <header aria-labelledby="fullName" class="flex flex-col items-center py-5">
+        <div id="fullName" class="font-accent font-thin text-6xl xs:text-center	sm:text-center">
+          {{ page.employee.first_name }} <strong class="font-light">{{ page.employee.last_name }}</strong>
         </div>
-        <div class="employee-header__personal-link">
+        <div class="mt-2.5">
           <a class="link" href="{{ page.employee.personal_link.link }}">{{ page.employee.personal_link.display_name }}</a>
         </div>
-        <div class="employee-header__links">
-          <ul class="employee-header__links_list">
-            <li class="employee-header__links_list_item">
-              <a class="link" href="{{ page.employee.email.link }}">{{ page.employee.email.display_name }}</a>
-            </li>
-            <li class="list-item-delimiter">&#124;</li>
-            <li class="employee-header__links_list_item">
-              <a class="link" href="{{ page.employee.phone.link }}">{{ page.employee.phone.display_name }}</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="flex flex-wrap justify-around xs:flex-col xs:items-center">
+          <li>
+            <a class="link" href="{{ page.employee.email.link }}">{{ page.employee.email.display_name }}</a>
+          </li>
+          <li class="list-item-delimiter text-base text-base-100 xs:hidden">&#124;</li>
+          <li>
+            <a class="link" href="{{ page.employee.phone.link }}">{{ page.employee.phone.display_name }}</a>
+          </li>
+        </ul>
       </header>
       <hr />
-      <main class="employee-sections">
-        <div class="employee-about">
+      <main class="grid my-5 employee-sections">
+        <div>
           {% if page.employee.sections.education %}
             <section class="section" aria-labelledby="education">
-              <h2 class="section__title" id="education">Education</h2>
-              <dl class="section__list">
+              <h2 class="section-title" id="education">Education</h2>
+              <dl>
                 {% for school in page.employee.sections.education.schools %}
-                  <div class="school section__list_item">
+                  <div class="school section-item">
                     {% if school.graduated %}
-                      <dt class="school-name section-value">
-                        <div class="school-title section-value__title">
+                      <dt class="school-name">
+                        <div class="school-title font-accent font-semibold leading-extra-tight my-2.5 text-lg">
                           {{ school.graduated.schoolName | upcase  }}
                         </div>
-                        <div class="school-graduated-degree">
+                        <div class="font-accent leading-none mb-2.5 text-base">
                           {{ school.graduated.degree }}
                         </div>
                         {% if school.graduated.date or school.graduated.location %}
-                          <div class="school-graduated-at section-value__time-and-location">
+                          <div class="school-graduated-at font-accent font-semibold leading-none text-base-100 text-sm">
                             {% if school.graduated.date %}
                               <time class="time" datetime="{{ school.graduated.date }}">{{ school.graduated.date | date: "%b %Y" }}</time>
                             {% endif %}
@@ -76,10 +74,10 @@
                       </dt>
                     {% endif %}
                     {% if school.subjects %}
-                      <dd class="school-subjects section-additional-data">
-                        <ul class="school-subjects__list section-additional-data__list">
+                      <dd class="school-subjects mt-2.5">
+                        <ul>
                           {% for subject in school.subjects %}
-                            <li class="school-subjects__list_item section-additional-data__list_item">{{ subject }}</li>
+                            <li class="font-light leading-extra-tight text-base">{{ subject }}</li>
                           {% endfor %}
                         </ul>
                       </dd>
@@ -91,13 +89,13 @@
           {% endif %}
           {% if page.employee.sections.links %}
             <section class="section" aria-labelledby="links">
-              <h2 class="section__title" id="links">Links</h2>
-              <div class="links section-additional-data">
-                <ul class="links__list section-additional-data__list">
+              <h2 class="section-title" id="links">Links</h2>
+              <div class="mt-2.5">
+                <ul>
                   {% for link in page.employee.sections.links %}
-                    <li class="links__list_item section-additional-data__list_item">
+                    <li class="font-light leading-extra-tight text-base">
                       {{ link.resource }}
-                      <a class="link" target="_blank" href="{{ link.link }}">{{ link.display_name }}</a>
+                      <a class="link leading-extra-tight text-base text-base-200" target="_blank" href="{{ link.link }}">{{ link.display_name }}</a>
                     </li>
                   {% endfor %}
                 </ul>
@@ -106,26 +104,26 @@
           {% endif %}
           {% if page.employee.sections.skills %}
             <section class="section" aria-labelledby="skills">
-              <h2 class="section__title" id="skills">Skills</h2>
-              <dl class="section__list">
+              <h2 class="section-title" id="skills">Skills</h2>
+              <dl>
                 {% for skill in page.employee.sections.skills %}
-                  <div class="section__list_item">
+                  <div class="section-item">
                     {% if skill.category %}
-                      <dt class="section-value">
-                        <div class="section-value__title">
+                      <dt>
+                        <div class="font-accent font-semibold leading-extra-tight my-2.5 text-lg">
                           {{ skill.category | upcase  }}
                         </div>
                       </dt>
                     {% endif %}
                     {% if skill.category_sets %}
-                      <dd class="section-additional-data">
-                        <ul class="section-additional-data__list">
+                      <dd class="mt-2.5">
+                        <ul>
                           {% for category_set in skill.category_sets %}
-                            <li class="skills-category-set section-additional-data__list_item">
-                              <h4 class="skills-category-set__title">{{ category_set.title }}</h4>
-                              <ul class="skills-category-set__list">
+                            <li class="skills-category-set font-light leading-extra-tight text-base">
+                              <h4 class="font-accent text-base-100">{{ category_set.title }}</h4>
+                              <ul>
                                 {% for item in category_set.items %}
-                                  <li class="skills-category-set__list_item">
+                                  <li class="inline-block skill">
                                     {{ item }}
                                   </li>
                                 {% endfor %}
@@ -144,21 +142,21 @@
         <div class="employee-expirience">
           {% if page.employee.sections.experience %}
             <section class="section" aria-labelledby="experience">
-              <h2 class="section__title" id="experience">Experience</h2>
-              <dl class="section__list">
+              <h2 class="section-title" id="experience">Experience</h2>
+              <dl>
                 {% for company in page.employee.sections.experience %}
-                  <div class="company section__list_item">
-                    <dt class="company__description section-value">
-                      <div class="company__description_title section-value__title">
+                  <div class="company section-item">
+                    <dt>
+                      <div class="font-accent font-semibold leading-extra-tight my-2.5 text-lg">
                         {{ company.company | upcase }}
                       </div>
                       {% if company.position %}
-                        <div class="company__description_position">
+                        <div class="font-accent leading-extra-extra-tight mb-2.5 text-base">
                           {{ company.position | join: ", "}}
                         </div>
                       {% endif %}
                       {% if company.date_from or company.location %}
-                        <div class="company__description_period section-value__time-and-location">
+                        <div class="font-accent font-semibold leading-none text-base-100 text-sm">
                           {% if company.date_from %}
                             <time class="time" datetime="{{ company.date_from }}">{{ company.date_from | date: "%b %Y" }}</time>
                             {% if company.date_to %}
@@ -177,10 +175,10 @@
                       {% endif %}
                     </dt>
                     {% if company.achievements %}
-                      <dd class="company__achievements section-additional-data">
-                        <ul class="company__achievements_list section-additional-data__list">
+                      <dd class="mt-2.5">
+                        <ul>
                           {% for achievement in company.achievements %}
-                            <li class="company__achievements_list_item section-additional-data__list_item">{{ achievement }}</li>
+                            <li class="achievement font-light leading-extra-tight pl-8 relative text-base">{{ achievement }}</li>
                           {% endfor %}
                         </ul>
                       </dd>
@@ -192,20 +190,20 @@
           {% endif %}
           {% if page.employee.sections.research %}
             <section class="section" aria-labelledby="research">
-              <h2 class="section__title" id="research">Research</h2>
-              <dl class="section__list">
+              <h2 class="section-title" id="research">Research</h2>
+              <dl>
                 {% for research in page.employee.sections.research %}
-                  <div class="section__list_item">
-                    <dt class="section-value">
-                      <div class="section-value__title">
+                  <div class="section-item">
+                    <dt>
+                      <div class="font-accent font-semibold leading-extra-tight my-2.5 text-lg">
                         <span>{{ research.place | upcase }}</span>
                         {% if research.title %}
-                          <span class="list-item-delimiter">&#124;</span>
-                          <span class="section-value__title_sub">{{ research.title }}</span>
+                          <span class="list-item-delimiter font-normal">&#124;</span>
+                          <span class="font-normal">{{ research.title }}</span>
                         {% endif %}
                       </div>
                       {% if research.date_from or research.location %}
-                        <div class="section-value__time-and-location">
+                        <div class="font-accent font-semibold leading-none text-base-100 text-sm">
                           {% if research.date_from %}
                             <time class="time" datetime="{{ research.date_from }}">{{ research.date_from | date: "%b %Y" }}</time>
                             {% if research.date_to %}
@@ -224,8 +222,8 @@
                       {% endif %}
                     </dt>
                     {% if research.description %}
-                      <dd class="section-additional-data">
-                        <div class="section-additional-data__text">
+                      <dd class="mt-2.5">
+                        <div class="font-light leading-extra-tight text-base">
                           {{ research.description }}
                         </div>
                       </dd>
@@ -237,21 +235,21 @@
           {% endif %}
           {% if page.employee.sections.achievements %}
             <section class="section" aria-labelledby="achievements">
-              <h2 class="section__title" id="achievements">Achievements</h2>
-              <dl class="achievements__list">
+              <h2 class="section-title" id="achievements">Achievements</h2>
+              <dl class="font-light gap-y-2.5 grid grid-cols-achievement leading-extra-tight mt-2.5 text-base">
                 {% for achievement in page.employee.sections.achievements %}
-                  <dt class="achievements__list_year">{{ achievement.year }}</dt>
-                  <dd class="achievements__list_description">{{ achievement.description }}</dd>
+                  <dt class="text-center">{{ achievement.year }}</dt>
+                  <dd>{{ achievement.description }}</dd>
                 {% endfor %}
               </dl>
             </section>
           {% endif %}
           {% if page.employee.sections.articles %}
             <section class="section" aria-labelledby="articles">
-              <h2 class="section__title" id="articles">Articles</h2>
-              <ol class="articles__list">
+              <h2 class="section-title" id="articles">Articles</h2>
+              <ol class="articles font-light gap-y-2.5 grid grid-cols-auto leading-extra-tight mt-2.5 text-base">
                 {% for article in page.employee.sections.articles %}
-                  <li class="articles__list_item">{{article}}</li>
+                  <li class="article pl-8 relative">{{article}}</li>
                 {% endfor %}
               </ol>
             </section>

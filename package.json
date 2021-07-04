@@ -1,0 +1,15 @@
+{
+  "name": "maksimyaromin.github.io",
+  "version": "1.0.0",
+  "description": "Resume",
+  "main": "-",
+  "repository": "git@github.com:maksimyaromin/maksimyaromin.github.io.git",
+  "author": "Maksim Yaromin <yaromin.m.y@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "10.2.6",
+    "postcss": "8.3.5",
+    "tailwindcss": "2.2.4"
+  }
+}
