@@ -1,8 +1,7 @@
 module.exports = {
-  purge: false,
+  purge: ['./_site/**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-
     colors: {
       'base-100': 'rgba(var(--color-base-100), 1)',
       'base-200': 'rgba(var(--color-base-200), 1)',
