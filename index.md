@@ -92,10 +92,18 @@ employee:
                     - SignalR
                     - AngularJS
         experience:
+            - company: Upwork.com
+              position:
+                - Freelancer
+              date_from: 2021-05-04
+              location: Gdańsk, Poland
+              achievements:
+                - "Full Stack Developer at scompler.com"
             - company: Linnworks
               position:
                 - Team Leader
               date_from: 2020-11-01
+              date_to: 2021-04-01
               location: Tallinn, Estonia
               achievements:
                 - "Migrating a monolithic application to the cloud with a split into microservices"
