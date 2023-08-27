@@ -15,6 +15,9 @@ meta:
 employee:
     first_name: "Maksim"
     last_name: "Yaromin"
+    badges:
+      - name: B2B
+        className: "bg-base-300 text-white"
     personal_link:
         display_name: maksimyaromin.github.io
         link: https://maksimyaromin.github.io/
@@ -92,13 +95,28 @@ employee:
                     - SignalR
                     - AngularJS
         experience:
+            - company: Scompler.com
+              position:
+                - Principal Software Engineer
+              date_from: 2023-06-01 
+              location: Gdańsk, Poland
+              achievements:
+                - "led architectural decisions for a significant migration and refactoring initiative (transitioning a large legacy Ruby on Rails monolith into a distinct front-end application). Demonstrated prowess in designing and implementing complex solutions;"
+                - "spearheaded the adoption of Module Federation, a state-of-the-art practice, enhancing code modularity and enabling efficient collaboration among multiple teams. Integrated GraphQL practices for streamlined backend communication, showcasing forward-thinking technological integration;"
+                - "designed and engineered a client-side framework to unify data access and storage layers using react-query, showcasing innovation in creating tools that boost development efficiency and maintainability;"
+                - "mentored and coached the team, fostering skill growth and knowledge-sharing. Elevated the team's expertise through conducting meetups and workshops, displaying a commitment to personal and team development;"
+                - "acted as a prominent advocate for front-end development within the organization, promoting best practices and emerging trends. Prominently organized and led workshops and meetups to share insights and build a thriving community of developers."
             - company: Upwork.com
               position:
                 - Freelancer
               date_from: 2021-05-04
               location: Gdańsk, Poland
               achievements:
-                - "Full Stack Developer at scompler.com"
+                - "collaborated with a major client on Upwork.com for over two years, showcasing dedication and reliability in consistently delivering high-quality solutions;"
+                - "advanced from a front-end developer specializing in JavaScript to a leadership position as the lead front-end specialist on the project, reflecting adaptability, skill development, and proven expertise;"
+                - "spearheaded the creation of a comprehensive design system within a dedicated monorepository, streamlining project workflows and ensuring consistent design elements across various components;"
+                - "significantly improved the performance of a React application, showcasing technical prowess in identifying bottlenecks and implementing optimizations to enhance user experience;"
+                - "played a pivotal role in instilling a culture of writing performant code within the team, fostering collaboration and knowledge-sharing for sustained productivity gains."
             - company: Linnworks
               position:
                 - Team Leader
@@ -106,7 +124,7 @@ employee:
               date_to: 2021-04-01
               location: Tallinn, Estonia
               achievements:
-                - "Migrating a monolithic application to the cloud with a split into microservices"
+                - "migrating a monolithic application to the cloud with a split into microservices."
             - company: EPAM Systems
               position:
                 - Developer's Team Leader
@@ -114,10 +132,10 @@ employee:
               date_to: 2020-10-02
               location: Minsk, Belarus
               achievements:
-                - "Analysis of the application code to identify performance issues and to use the best development practices in Angular"
-                - "Developer consultation on Front-End issues"
-                - "Management of a team for the development of the I-9 Platform application - an I-9 electronic circulation service. Code review for team members"
-                - "Internal CSS framework development and application redesign"
+                - "analysis of the application code to identify performance issues and to use the best development practices in Angular;"
+                - "developer consultation on Front-End issues;"
+                - "management of a team for the development of the I-9 Platform application - an I-9 electronic circulation service. Code review for team members;"
+                - "internal CSS framework development and application redesign."
             - company: SYSTEM TECHNOLOGIES JLLC
               position:
                 - Software Engineering Intern
@@ -128,8 +146,8 @@ employee:
               date_to: 2018-12-31
               location: Minsk, Belarus
               achievements:
-                - "Work on several products of the company to automate banking operations. Full stack development and support"
-                - "Development of an internal MVVM framework based on KendoUI and AMD for creating front-end applications"
+                - "work on several products of the company to automate banking operations. Full stack development and support;"
+                - "development of an internal MVVM framework based on KendoUI and AMD for creating front-end applications."
             - company: Upwork.com
               position:
                 - Freelancer
@@ -137,8 +155,8 @@ employee:
               date_to: 2014-07-01
               location: Minsk, Belarus
               achievements:
-                - "Development of soft skills, such as: self-organization, self-education, sociability"
-                - "Mastering the ability to work independently" 
+                - "development of soft skills, such as: self-organization, self-education, sociability;"
+                - "mastering the ability to work independently." 
         research:
             - place: "BSUIR Nanoelectronics LAB"
               title: Researcher

@@ -1,10 +1,11 @@
 module.exports = {
-  purge: ['./_site/**/*.html'],
+  purge: ['./_site/**/*.html', './index.md'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
       'base-100': 'rgba(var(--color-base-100), 1)',
       'base-200': 'rgba(var(--color-base-200), 1)',
+      'base-300': 'rgba(var(--color-base-300), 1)',
       black: 'rgba(var(--color-black), 1)',
       white: 'rgba(var(--color-white), 1)'
     },

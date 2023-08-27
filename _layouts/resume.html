@@ -15,12 +15,12 @@
 
     <link rel="stylesheet" href="{{ site.data.manifest['main.css'] }}">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="{{ page.meta.twitter.user_name }}" />
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:title" content="{{ page.meta.twitter.title }}" />
-    <meta property="og:description" content="{{ page.meta.description }}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.meta.twitter.image }}" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="{{ page.meta.twitter.user_name }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ page.meta.twitter.title }}">
+    <meta property="og:description" content="{{ page.meta.description }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.meta.twitter.image }}">
   </head>
   <body>
     <div class="lg:max-w-layout min-h-screen mx-auto my-0 print:max-w-full print:w-full relative">
@@ -40,8 +40,17 @@
             <a class="link" href="{{ page.employee.phone.link }}">{{ page.employee.phone.display_name }}</a>
           </li>
         </ul>
+        {% if page.employee.badges %}
+          <ul class="flex items-center mt-2.5">
+            {% for badge in page.employee.badges %}
+              <li class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded {{ badge.className }}">
+                <span>{{ badge.name }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </header>
-      <hr />
+      <hr>
       <main class="grid my-5 employee-sections">
         <div>
           {% if page.employee.sections.education %}
