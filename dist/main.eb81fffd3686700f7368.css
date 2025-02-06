@@ -421,8 +421,7 @@ textarea::placeholder {
   color: #a1a1aa;
 }
 
-button,
-[role="button"] {
+button {
   cursor: pointer;
 }
 
@@ -575,10 +574,6 @@ hr {
 
 .achievement + .achievement, .skills-category-set + .skills-category-set {
   margin-top: 0.625rem;
-}
-
-.articles {
-  counter-reset: articles;
 }
 
 .article {
@@ -761,10 +756,6 @@ hr {
 
 .grid-cols-achievement {
   grid-template-columns: 80px auto;
-}
-
-.grid-cols-auto {
-  grid-template-columns: auto;
 }
 
 .flex-col {

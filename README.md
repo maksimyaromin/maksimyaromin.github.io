@@ -1,21 +1,18 @@
 # Resume template with Jekyll
 *Based on [Deedy-Resume](https://github.com/deedy/Deedy-Resume/blob/master/OpenFonts/deedy_resume-openfont.pdf)*
 
-*Dear Sir or Madam*,
+**Hi there 👋**
 
-By this letter I would like to give a few words about things that make me motivated.
+Software development has been my craft and passion for many years. From building scalable web systems to designing robust architectures, I’ve dedicated my career to solving complex problems and creating meaningful solutions.
 
-Software Development is being my passion since early childhood. And I am glad I was able to realize my dream. Today I am a professional developer with decades of experience. 
+Throughout my journey, I’ve focused on mastering tools and technologies, blending them into cohesive systems that address real-world challenges. My approach combines precision, creativity, and a deep understanding of the domain, ensuring not just functional solutions but elegant ones.
 
-**Challenges** are something that I appreciate most in my work. I love **solving difficult tasks**, **implement new approaches**, and **learn new technologies**.
+I’ve always valued the intersection of technical excellence and practical application. Whether it’s designing complex systems or refining existing solutions, I strive to make an impact that lasts. Each project has been an opportunity to grow and push the boundaries of what technology can achieve.
 
-During my career, I was mostly involved in web design. I developed services and applications of different sizes and for various businesses. 
+In recent years, I’ve been expanding my expertise into the fields of machine learning and AI, exploring how these technologies can be seamlessly integrated into practical applications. My focus is on impactful challenges—automation, intelligent systems, and prediction models—where innovation meets real-world value.
 
-Currently apart from web design, the sphere of my interests involves machine learning methods, cloud computing, and development for the Open Source community.
-
-I would much appreciate an **opportunity** to work on some **good tool** or **framework** for developers or explore machine learning feasibility.
-
-I am opened to new challenges and ready to change the world.
+I am always open to exploring new opportunities and challenges that align with my passion for creating meaningful and innovative solutions.
 
 Kind regards,
+
 Maksim Yaromin.

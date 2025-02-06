@@ -4,7 +4,7 @@ title: "Maksim Yaromin"
 favicon: "assets/icons/favicon.ico"
 meta:
     description: >-
-        Hello, my name is Maksim Yaromin. I am Software Developer. Software Development is being my passion since early childhood. And I am glad I was able to realize my dream. Today I am a professional developer with decades of experience.
+        Hello, my name is Maksim Yaromin. I am a Software Developer. Software development has been my passion since childhood, shaping both my career and mindset. Over the years, I have honed my skills in building scalable systems and solving complex technical challenges. Today, with extensive experience, I continue to push the boundaries of technology and innovation.
     robots:
         - index
         - follow
@@ -57,13 +57,13 @@ employee:
         skills:
             - category: Programming
               category_sets:
-                - title: "Over 100000 lines:"
+                - title: "Over 1000000 lines:"
                   items:
                     - JavaScript
-                - title: "Over 50000 lines:"
+                    - TypeScript
+                - title: "Over 100000 lines:"
                   items:
                     - C#
-                    - TypeScript
                     - CSS
                 - title: "Over 10000 lines:"
                   items:
@@ -72,51 +72,76 @@ employee:
                 - title: "Over 1000 lines:"
                   items:
                     - C++
-                    - Python (ML)
-                    - Shell
                     - Scala
-                - title: "Veteran:"
+                - title: "Artificial Intelligence & Machine Learning:"
                   items:
-                    - Angular
+                    - Python
+                    - TensorFlow
+                    - PyTorch
+                    - Amazon SageMaker
+                - title: "Can’t Live Without:"
+                  items:
+                    - Tailwind CSS
+                    - Nx
+                    - AI SDK by Vercel
+                    - Next.js
+                    - Git
+                - title: "Battle-Tested:"
+                  items:
                     - React
+                    - Angular
                     - ASP.NET Core
-                    - Docker
-                    - SCSS
-                - title: "Familiar:"
+                - title: "Been There, Done That:"
                   items:
                     - Azure
                     - AWS
                     - Terraform
                     - Vagrant
                     - Kubernetes
-                    - MS SQL
+                    - Docker
+                    - PostgreSQL
                     - MongoDB
                     - Xamarin
                     - SignalR
                     - AngularJS
+                    - SCSS
         experience:
             - company: Scompler.com
               position:
                 - Principal Software Engineer
               date_from: 2023-06-01 
-              location: Gdańsk, Poland
+              location: Kraków, Poland
               achievements:
-                - "led architectural decisions for a significant migration and refactoring initiative (transitioning a large legacy Ruby on Rails monolith into a distinct front-end application). Demonstrated prowess in designing and implementing complex solutions;"
-                - "spearheaded the adoption of Module Federation, a state-of-the-art practice, enhancing code modularity and enabling efficient collaboration among multiple teams. Integrated GraphQL practices for streamlined backend communication, showcasing forward-thinking technological integration;"
-                - "designed and engineered a client-side framework to unify data access and storage layers using react-query, showcasing innovation in creating tools that boost development efficiency and maintainability;"
-                - "mentored and coached the team, fostering skill growth and knowledge-sharing. Elevated the team's expertise through conducting meetups and workshops, displaying a commitment to personal and team development;"
-                - "acted as a prominent advocate for front-end development within the organization, promoting best practices and emerging trends. Prominently organized and led workshops and meetups to share insights and build a thriving community of developers."
+                - "Led architectural decisions for a large-scale migration, transforming a legacy monolith into a modern, decoupled front-end application."
+                - "Championed modularization strategies, improving scalability and enabling seamless collaboration across multiple teams."
+                - "Designed and implemented a unified client-side framework, streamlining data access and enhancing maintainability."
+                - "Fostered a culture of technical excellence through mentorship, knowledge-sharing, and team workshops."
+                - "Advocated for front-end best practices, driving innovation and strengthening the internal developer community."
+            - company: Mission Hire Gaming & Tech
+              position:
+                - Technical Advisor
+                - Lead Engineer
+              date_from: 2024-02-01
+              date_to: 2024-10-01
+              location: Remote
+              achievements:
+                - "Led the architectural design and development of an AI-driven system for automating candidate evaluation in the creative industry."
+                - "Designed and implemented algorithms for analyzing visual portfolios, classifying artistic styles, and matching candidates with job requirements."
+                - "Developed a data extraction pipeline to aggregate portfolio samples from multiple platforms, enabling a richer dataset for AI training."
+                - "Integrated generative AI models for textual and visual evaluation, producing comprehensive assessments of candidates based on predefined metrics."
+                - "Provided strategic technical consulting, guiding the project from research and prototyping to a functional AI-powered evaluation system."
             - company: Upwork.com
               position:
                 - Freelancer
               date_from: 2021-05-04
+              date_to: 2024-02-01
               location: Gdańsk, Poland
               achievements:
-                - "collaborated with a major client on Upwork.com for over two years, showcasing dedication and reliability in consistently delivering high-quality solutions;"
-                - "advanced from a front-end developer specializing in JavaScript to a leadership position as the lead front-end specialist on the project, reflecting adaptability, skill development, and proven expertise;"
-                - "spearheaded the creation of a comprehensive design system within a dedicated monorepository, streamlining project workflows and ensuring consistent design elements across various components;"
-                - "significantly improved the performance of a React application, showcasing technical prowess in identifying bottlenecks and implementing optimizations to enhance user experience;"
-                - "played a pivotal role in instilling a culture of writing performant code within the team, fostering collaboration and knowledge-sharing for sustained productivity gains."
+                - "Built a long-term partnership with a major client, demonstrating consistency and reliability in delivering high-quality solutions."
+                - "Progressed from a front-end developer to a leadership role, driving technical decisions and ensuring development excellence."
+                - "Led the development of a scalable design system within a monorepository, improving maintainability and workflow efficiency."
+                - "Optimized application performance, identifying and resolving bottlenecks to enhance responsiveness and user experience."
+                - "Fostered a culture of writing efficient, maintainable code, mentoring the team and promoting best engineering practices."
             - company: Linnworks
               position:
                 - Team Leader
@@ -124,7 +149,7 @@ employee:
               date_to: 2021-04-01
               location: Tallinn, Estonia
               achievements:
-                - "migrating a monolithic application to the cloud with a split into microservices."
+                - "Provided architectural consulting and strategic guidance on migrating a monolithic system to a cloud-based microservices architecture."
             - company: EPAM Systems
               position:
                 - Developer's Team Leader
@@ -132,10 +157,12 @@ employee:
               date_to: 2020-10-02
               location: Minsk, Belarus
               achievements:
-                - "analysis of the application code to identify performance issues and to use the best development practices in Angular;"
-                - "developer consultation on Front-End issues;"
-                - "management of a team for the development of the I-9 Platform application - an I-9 electronic circulation service. Code review for team members;"
-                - "internal CSS framework development and application redesign."
+                - "Led a development team, overseeing project execution and ensuring high-quality delivery."
+                - "Conducted in-depth code analysis to optimize performance and enforce best development practices."
+                - "Provided technical mentorship and consulting, supporting developers in solving complex front-end challenges."
+                - "Managed the development of an enterprise-level electronic documentation platform, ensuring scalability and maintainability."
+                - "Reviewed and refined team members’ code, fostering a culture of quality and continuous improvement."
+                - "Led UI/UX modernization efforts, enhancing maintainability and user experience through framework development and application redesign."
             - company: SYSTEM TECHNOLOGIES JLLC
               position:
                 - Software Engineering Intern
@@ -146,8 +173,11 @@ employee:
               date_to: 2018-12-31
               location: Minsk, Belarus
               achievements:
-                - "work on several products of the company to automate banking operations. Full stack development and support;"
-                - "development of an internal MVVM framework based on KendoUI and AMD for creating front-end applications."
+                - "Developed and maintained multiple enterprise solutions, focusing on automation of complex business operations."
+                - "Led full-stack development efforts, ensuring seamless integration between system components."
+                - "Designed and implemented internal frameworks to improve efficiency and scalability of front-end applications."
+                - "Optimized system performance and maintainability, improving modularity and reducing development overhead."
+                - "Provided long-term support and iterative enhancements, ensuring stability and adaptability of core solutions."
             - company: Upwork.com
               position:
                 - Freelancer
@@ -155,9 +185,15 @@ employee:
               date_to: 2014-07-01
               location: Minsk, Belarus
               achievements:
-                - "development of soft skills, such as: self-organization, self-education, sociability;"
-                - "mastering the ability to work independently." 
+                - "Developed strong self-organization and time management skills while managing multiple projects independently."
+                - "Enhanced adaptability and self-learning capabilities by working with diverse technologies and client requirements."
+                - "Strengthened communication and collaboration skills through direct interaction with international clients."
+                - "Gained experience in handling full project cycles, from requirements gathering to delivery." 
         research:
+            - place: "Independent Research"
+              title: Artificial Intelligence & Machine Learning
+              date_from: 2024-01-01
+              description: "Deeply exploring modern AI and machine learning frameworks, focusing on model training, optimization, and real-world applications. Researching advanced techniques for integrating AI into production environments, with a particular interest in Retrieval-Augmented Generation (RAG) systems and automation-driven solutions. Continuously experimenting with cutting-edge technologies to push the boundaries of AI-driven development."
             - place: "BSUIR Nanoelectronics LAB"
               title: Researcher
               date_from: 2015-12-01
@@ -168,6 +204,12 @@ employee:
               title: Developer
               date_from: 2020-10-01
               description: "I am developing a library for Angular that will allow wrapping React components in native Angular components. This topic is of scientific interest to me. I am researching possible ways to find the best one or prove that it does not exist."
+            - place: "Independent Research"
+              title: Web Frameworks
+              date_from: 2019-05-01
+              date_to: 2020-03-01
+              location: "Minsk, Belarus"
+              description: "Conducted an extensive study on the evolution of modern web frameworks, focusing on architecture, efficiency, and design system integration. Analyzed different approaches to framework scalability and maintainability, with a particular emphasis on their impact on business applications."
         achievements:
             - year: 2020
               description: "Angular Certified Developer. Angular GDEs"
@@ -185,6 +227,4 @@ employee:
               description: "Exam 480: Programming in HTML5 with JavaScript and CSS3. Microsoft"
             - year: 2017
               description: "Techdegree: Full-Stack JavaScript Developer. Treehouse Inc."
-        articles:
-            - "Evolution stages of modern web frameworks. The concepts behind them and the details that will improve their efficiency. Considered the following: Angular.JS, Angular 2, Angular 4, Angular 11, React. <em>Series of articles</em>. In draft."
 ---
